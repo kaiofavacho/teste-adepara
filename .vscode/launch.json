@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Android",
+            "request": "launch",
+            "type": "reactnative",
+            "platform": "android",
+            "sourceMaps": true,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Run Android",
+            "expoHostType": "tunnel"
+        },
+        {
+            "name": "Debug iOS",
+            "request": "launch",
+            "type": "reactnative",
+            "platform": "ios",
+            "sourceMaps": true,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Run iOS",
+            "expoHostType": "tunnel"
+        },
+        {
+            "name": "Debug Web",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:19006",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+                "webpack:///./*": "${workspaceFolder}/*"
+            },
+            "preLaunchTask": "Run Web"
+        }
+    ]
+}

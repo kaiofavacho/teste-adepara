@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Expo",
+            "type": "shell",
+            "command": "expo start --dev-client",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Android",
+            "type": "shell",
+            "command": "npm run android",
+            "group": "build",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Run iOS",
+            "type": "shell",
+            "command": "npm run ios",
+            "group": "build",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Run Web",
+            "type": "shell",
+            "command": "npm run web",
+            "group": "build",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Reset Project",
+            "type": "shell",
+            "command": "node ./scripts/reset-project.js",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "jest --watchAll",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Lint",
+            "type": "shell",
+            "command": "expo lint",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

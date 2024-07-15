@@ -1,0 +1,5 @@
+--build local ios Testflight
+eas build --platform ios --local --profile development 
+
+--generate .apk
+eas build --platform android --local --profile development
